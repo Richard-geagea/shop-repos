@@ -1,0 +1,244 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: Poppins;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+     margin: auto;
+    width: 1200px;
+    max-width: 90%;
+    text-align: center;
+    padding-top: 20px;
+    transition: transform .5s;
+}
+header img{
+    height: 40px;
+
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    width: 1200px;
+
+   
+    
+}
+.icon-cart{
+    position: relative;
+    cursor: pointer;
+}
+.icon-cart span{
+    position: absolute;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: #fff;
+    top: 1px;
+    right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.listProduct .item img{
+    width: 70%;
+    height: 50%;
+    margin-top: 5px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    padding-bottom: 20px;
+}  
+.listProduct .item:hover img{
+
+    transform: scale(1.1);
+} 
+.listProduct{  
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-content: center;
+    
+}
+.listProduct .item{
+   border: 1px solid black;
+   border-radius: 20px;
+    margin: 10px;
+    height: 300px;
+    width: 280px;
+    box-shadow: 5px 10px 8px #888888;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    
+}
+.listProduct .item h2{
+margin: 0px;
+height: 40px;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+padding: 10px;
+font-size: large;
+
+      
+}
+
+.listProduct .item button{
+    background-color: rgb(77, 33, 20);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-weight: lighter;
+    padding: 5px ;
+    width: 150px;
+    margin: 20px 20px 20px 0px;
+    cursor: pointer;
+}
+
+/* cart */
+
+.cartTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showCart .cartTab{
+    right: 0;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+    background-color: #26fe00;
+    border: none;
+    font-family: Poppins;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .close{
+    background-color: #ff0000;
+}
+.listCart .item img{
+    width: 100%;
+}
+.listCart .item{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow:auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+@media screen and (max-width:1400px){
+    .listProduct{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (min-width:992px){
+    .listProduct{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media screen and (min-width:1500px){
+    .listProduct{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media screen and (max-width:600px){
+    .listProduct{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      
+    }
+    .listProduct .item{
+        width: 250px;
+    }
+    
+.listProduct .item{
+    margin: auto;
+   width: 250px;
+   float: middle;
+   margin-top: 30px;
+   text-align: center;
+   padding-top: 20px;
+   transition: transform .5s;
+}
+    
+}
+@media screen and (max-width:422px){
+     .cartTab{
+        height: 80%;
+      
+     }
+     .listCart .item{
+        display: grid;
+        grid-template-columns: 40px 100px 10px 170px;
+        gap: 10px;
+        text-align: center;
+        align-items: center;
+    }
+    .listProduct{
+       display: grid;
+       grid-template-columns: 1fr;
+      
+      
+    }
+    .listProduct .item img{
+       
+        transition: transform 0.3s ease;
+       
+    }  
+    .listProduct .item:hover img{
+
+        transform: scale(1.1);
+    } 
+    header{
+        width: 75%;
+    }
+}
