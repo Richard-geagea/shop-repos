@@ -1,0 +1,145 @@
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
+section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 2em;
+	height: 100% !important;
+
+}
+
+.contc {
+	background-color: beige;
+	padding-block: 4em;
+}
+
+.contc .container {
+	margin-top: 3em;
+	width: fit-content;
+	display: flex;
+	flex-direction: column;
+	height: fit-content;
+	gap: 2em;
+}
+
+form {
+	max-width: 300px;
+}
+
+.feedback-input {
+	color: black;
+	font-weight: 500;
+	font-size: 18px;
+	border-radius: 5px;
+	line-height: 22px;
+	background-color: transparent;
+	border: 2px solid #431700;
+	transition: all 0.3s;
+	padding: 13px;
+	margin-bottom: 15px;
+	width: 100%;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+.feedback-input:focus {
+	border: 2px solid #431700;
+}
+
+textarea {
+	height: 150px;
+	line-height: 150%;
+	resize: vertical;
+}
+
+[type="submit"] {
+	font-family: "poppins-l";
+	width: 100%;
+	background: #431700;
+	border-radius: 5px;
+	letter-spacing: 5px;
+	border: 0;
+	cursor: pointer;
+	color: white;
+	font-size: 24px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 700;
+}
+
+[type="submit"]:hover {
+	background: beige;
+	color: #151515;
+	border: 1px #431700 solid;
+	box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.5), inset 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+	border: 1px #431700 solid;
+}
+
+.banner {
+	height: fit-content;
+	padding: 3em 2em 3em 2em;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	gap: 2em;
+	margin-top: 3em;
+
+}
+
+.banner .direct-contact {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+
+.banner .direct-contact .contact-row {
+	display: flex;
+	flex-direction: row;
+	gap: 2em;
+}
+
+.icons .icons-row {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 2em;
+}
+
+.iconlink {
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #431700;
+}
+
+.copyrights {
+	text-align: center;
+	font-weight: 200;
+}
+
+@media (max-width:700px) {
+	.contc .container {
+		text-align: center;
+	}
+
+	.contc {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
