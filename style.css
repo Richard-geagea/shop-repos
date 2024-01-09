@@ -8,6 +8,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .container{
+    z-index: 1;
      margin: auto;
     width: 1200px;
     max-width: 90%;
@@ -106,6 +107,8 @@ font-size: large;
 /* cart */
 
 .cartTab{
+    padding-top: 6em;
+    z-index: 2;
     width: 400px;
     background-color: #353432;
     color: #eee;
@@ -118,11 +121,13 @@ font-size: large;
     transition: .5s;
 }
 body.showCart .cartTab{
-    right: 0;
+    right:0 ;
 }
-body.showCart .container{
-    transform: translateX(-250px);
+.cartTab .hideCart{
+    right: -400px;
 }
+
+
 .cartTab h1{
     padding: 20px;
     margin: 0;
