@@ -1,20 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
   var nav = document.querySelector("nav");
   var logo = document.querySelector(".logo");
-  var flex = document.querySelector(".flex");
   window.addEventListener("scroll", function () {
     if (window.scrollY > 50) {
-      nav.style.padding =
-        "0.5em 1em 0.5em 1em"; /* Change to your desired padding when scrolling */
-      logo.style.width =
-        "75px"; /* Change to your desired logo width when scrolling */
-      logo.style.height =
-        "75px"; /* Change to your desired logo height when scrolling */
+      nav.style.padding = "0.5em 1em 0.5em 1em";
+      logo.style.width = "75px";
+      logo.style.height = "75px";
     } else {
-      nav.style.padding =
-        "0.5em 1em 0.5em 1em"; /* Change to your default padding */
-      logo.style.width = "100px"; /* Change to your default logo width */
-      logo.style.height = "100px"; /* Change to your default logo height */
+      nav.style.padding = "0.5em 1em 0.5em 1em";
+      logo.style.width = "100px";
+      logo.style.height = "100px";
     }
   });
 });

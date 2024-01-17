@@ -117,17 +117,15 @@ font-size: large;
     right: -400px;
     bottom: 0;
     display: grid;
+    height: 70%;
     grid-template-rows: 70px 1fr 70px;
     transition: .5s;
 }
 body.showCart .cartTab{
     right:0 ;
 }
-.cartTab .hideCart{
-    right: -400px;
-}
 
-
+ 
 .cartTab h1{
     padding: 20px;
     margin: 0;

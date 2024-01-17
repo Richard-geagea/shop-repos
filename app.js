@@ -4,17 +4,18 @@ let iconCart = document.querySelector(".icon-cart");
 let iconCartSpan = document.querySelector(".icon-cart span");
 let body = document.querySelector("body");
 let closeCart = document.querySelector(".close");
+const closeCartButton = document.querySelector(".closeCartButton");
 let products = [];
 let cart = [];
 
 iconCart.addEventListener("click", () => {
   body.classList.toggle("showCart");
 });
+closeCartButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  body.classList.remove("showCart");
+});
 
-function hideCart() {
-  hideCart = document.querySelector(".hideCart");
-  hideCart.style.right = "-400px";
-}
 const addDataToHTML = () => {
   // remove datas default from HTML
 
